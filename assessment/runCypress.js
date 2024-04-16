@@ -1,5 +1,3 @@
-// CRIO_SOLUTION_AND_STUB_ONLY_START_MODULE_ONE
-// CRIO_SOLUTION_AND_STUB_ONLY_END_MODULE_ONE
 const cypress = require('cypress');
 const fs = require('fs');
 const { execSync } = require('child_process');
