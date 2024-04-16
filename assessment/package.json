@@ -1,0 +1,18 @@
+# CRIO_SOLUTION_AND_STUB_ONLY_START_MODULE_ONE
+# CRIO_SOLUTION_AND_STUB_ONLY_END_MODULE_ONE
+{
+    "name": "xquizfe",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "cypress": "^13.3.1",
+        "dotenv": "^16.3.1"
+    }
+}
