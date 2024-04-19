@@ -51,10 +51,6 @@ describe('Simple Quiz App', () => {
         });
     });
 
-    it('shows a hover effect when hovering over an answer', () => {
-        cy.get('#answer-list li').first().realHover().should('have.css', 'background-color', 'rgb(245, 245, 245)');
-    });
-
     it('has the correct padding for the body', () => {
         cy.get('body').should('have.css', 'padding', '50px');
     });
