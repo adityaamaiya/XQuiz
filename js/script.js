@@ -54,7 +54,9 @@ const questions = [
 
 
 submitButton.addEventListener("click", () => {
+    // Write the JS code that you want to be executed each time the Submit button is clicked.
 });
 
 nextButton.addEventListener("click", () => {
+    // Write the JS code that you want to be executed each time the Next button is clicked.
 });
