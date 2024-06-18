@@ -51,12 +51,76 @@ const questions = [
     correct: 1
 }
 ];
+let currentQuestion = 0;
+let score = 0;
+let totalScore = questions.length;
+let submitButton = document.getElementById("submit");
+let nextButton = document.getElementById("next");
 
+function injectRadioButtons(containerId, options) {
+    const container = document.getElementById(containerId);
+    container.innerHTML = '';
+
+    options.forEach((option, index) => {
+        const list = document.createElement('li');
+        const label = document.createElement('label');
+        label.htmlFor = `radio-${index}`;
+        label.innerText = option;
+
+        const radioButton = document.createElement('input');
+        radioButton.type = 'radio';
+        radioButton.name = 'options';
+        radioButton.value = option;
+        radioButton.id = `radio-${index}`;
+
+        list.appendChild(radioButton);
+        list.appendChild(label);
+        container.appendChild(list);
+    });
+}
+
+function beginQuiz() {
+    let question = questions[currentQuestion].text;
+    document.querySelector("#question").innerHTML = question;
+    injectRadioButtons('answer-list', questions[currentQuestion].options);
+    nextButton.classList.add('hide');
+}
+
+beginQuiz();
 
 submitButton.addEventListener("click", () => {
-    // Write the JS code that you want to be executed each time the Submit button is clicked.
+    const selectedOption = document.querySelector('input[name="options"]:checked');
+
+    if (!selectedOption) {
+        alert('Please select an answer!');
+        return;
+    }
+
+    const selectedIndex = Array.from(document.querySelectorAll('input[name="options"]')).indexOf(selectedOption);
+
+    if (selectedIndex === questions[currentQuestion].correct) {
+        score++;
+    }
+
+    const correctIndex = questions[currentQuestion].correct;
+    const correctListItem = document.querySelector(`input[id="radio-${correctIndex}"]`).parentElement;
+    correctListItem.style.backgroundColor = 'rgb(144, 238, 144)';
+
+    nextButton.classList.remove('hide');
+    submitButton.classList.add('hide');
 });
 
 nextButton.addEventListener("click", () => {
-    // Write the JS code that you want to be executed each time the Next button is clicked.
+    currentQuestion++;
+    if (currentQuestion < questions.length) {
+        nextButton.classList.add('hide');
+        submitButton.classList.remove('hide');
+        beginQuiz();
+    } else {
+        alert(`Quiz finished! Your score is: ${score}/${questions.length}`);
+        document.querySelector("#question").innerHTML = "Quiz completed!";
+        document.getElementById('answer-list').innerHTML = '';
+        submitButton.classList.add('hide');
+        nextButton.classList.add('hide');
+    }
 });

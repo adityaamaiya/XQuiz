@@ -1,6 +1,6 @@
 describe('Simple Quiz App', () => {
     beforeEach(() => {
-        cy.visit('http://localhost:3000/')  
+        cy.visit('http://13.127.27.149:8081/amaiyaaditya-ME_FE_BUILDOUT_XQUIZFE/')  
     });
 
     it('displays a question with multiple answers', () => {
