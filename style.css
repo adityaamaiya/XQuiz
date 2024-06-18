@@ -10,7 +10,10 @@ body{
     margin: 0;
     display: flex;
     justify-content: center;
-    background: linear-gradient(135deg, #e66465, #9198e5);
+    background: linear-gradient(135deg, #e66465, #9198e5) no-repeat center;
+    background-size: contain;
+    height: 100vh;
+    
 }
 .quiz-container {
     background-color: white;
@@ -18,7 +21,7 @@ body{
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 30%;
-    height: 30%;
+    height: max-content;
   }
   #answer-list{
     text-align: start;
@@ -34,4 +37,7 @@ body{
  }
  .bg{
     background-color: rgb(144, 238, 144);
+ }
+ button{
+  margin-top: 10px;
  }
