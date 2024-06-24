@@ -22,7 +22,7 @@ body {
   height: max-content;
   border-radius: 10px;
 }
-.quiz-container p{
+.quiz-container p {
   margin: 10px 0;
 }
 #answer-list {
@@ -30,7 +30,7 @@ body {
   margin-top: 5px;
   list-style-type: none;
 }
-#answer-list li{
+#answer-list li {
   margin-bottom: 10px;
 }
 #answer-list li:hover,
