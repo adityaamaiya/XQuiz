@@ -18,8 +18,9 @@ body {
   background-color: white;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.734);
   height: max-content;
+  border-radius: 10px;
 }
 .quiz-container p{
   margin: 10px 0;
