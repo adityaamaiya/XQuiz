@@ -19,13 +19,15 @@ body {
   padding: 20px;
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 30%;
   height: max-content;
 }
 #answer-list {
   text-align: start;
   margin-top: 5px;
   list-style-type: none;
+}
+#answer-list li{
+  margin-bottom: 10px;
 }
 #answer-list li:hover,
 label:hover {
@@ -40,4 +42,11 @@ label:hover {
 }
 button {
   margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  font-weight: 600;
 }
