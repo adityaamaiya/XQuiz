@@ -40,7 +40,7 @@ XQuiz is an interactive quiz application built using HTML, CSS, and JavaScript w
 
 ## Installation
 
-To run XQuizFE locally:
+To run XQuiz locally:
 
 1. Clone the repository:
 
@@ -51,7 +51,7 @@ To run XQuizFE locally:
 2. Navigate to the project directory:
 
    ```bash
-   cd XQuizFE
+   cd XQuiz
    ```
 
 3. Open the index.html file in your browser:
