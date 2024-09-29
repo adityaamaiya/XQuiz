@@ -1,6 +1,6 @@
-# XQuizFE - Quiz Application
+# XQuiz - Quiz Application
 
-XQuizFE is an interactive quiz application built using HTML, CSS, and JavaScript with DOM manipulation. Users answer one question at a time, and after each submission, they see the correct answer highlighted in green. At the end of the quiz, a popup displays their score out of 10.
+XQuiz is an interactive quiz application built using HTML, CSS, and JavaScript with DOM manipulation. Users answer one question at a time, and after each submission, they see the correct answer highlighted in green. At the end of the quiz, a popup displays their score out of 10.
 
 ## Features
 
